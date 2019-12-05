@@ -1,0 +1,19 @@
+#product-page {
+  max-width: 95%;
+  margin: auto;
+}
+
+#product-page p {
+  margin: 0;
+}
+
+#product-page img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#product-page .alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

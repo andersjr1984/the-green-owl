@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, createContext } from 'react';
+import PageDisplay from './Components/PageDisplay';
 
-function App() {
+import 'bootstrap/dist/css/bootstrap.css';
+
+export const Cart = createContext();
+
+const App = () => {
+  const [profile, setPro] = useState(null);
+  const [userId, setUID] = useState(null);
+  const [cart, setCart] = useState([]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Cart.Provider value={{ cart, setCart }}>
+      <PageDisplay />
+    </Cart.Provider>
   );
-}
+};
 
 export default App;
