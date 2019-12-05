@@ -19,3 +19,7 @@ No, there was a lot of work put into redux, but the context hooks have rendered 
 https://www.youtube.com/watch?v=USlg9yrwtgg&list=PLZW2FMU7HD1HbKrMIYzsPIbjzpYlvSTm3
 
 Thanks for stopping by and taking a look!
+
+<h2>Can I take a look at the site?</h2>
+
+https://the-green-owl-tutorial.firebaseapp.com/
